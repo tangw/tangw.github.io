@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="BasicsPARAGRAPHA paragraph consists of one or more consecutive lines of text without a line break. In another word, multiple paragraphs are seperated by one or blank lines. Paragraphs should not be in">
+    <meta name="description" content="This post offers an overview of Markdown syntax:      Block Elements Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements Links Emphasis Code Images   Misc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Getting started with Markdown">
 <meta property="og:url" content="http://tangw.info/2021/02/28/getting-started-with-markdown/index.html">
 <meta property="og:site_name" content="scratchpad">
-<meta property="og:description" content="BasicsPARAGRAPHA paragraph consists of one or more consecutive lines of text without a line break. In another word, multiple paragraphs are seperated by one or blank lines. Paragraphs should not be in">
+<meta property="og:description" content="This post offers an overview of Markdown syntax:      Block Elements Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements Links Emphasis Code Images   Misc">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-28T16:41:49.000Z">
-<meta property="article:modified_time" content="2021-03-01T02:50:54.482Z">
+<meta property="article:modified_time" content="2021-03-01T20:45:03.609Z">
 <meta property="article:author" content="tangw">
 <meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
@@ -114,7 +114,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basics"><span class="toc-number">1.</span> <span class="toc-text">Basics</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PARAGRAPH"><span class="toc-number">1.1.</span> <span class="toc-text">PARAGRAPH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HEADERS"><span class="toc-number">1.2.</span> <span class="toc-text">HEADERS</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Block Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">Paragraphs and Line Breaks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">Headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.4.</span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text">Code Blocks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.6.</span> <span class="toc-text">Horizontal Rules</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Span Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">Images</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">Miscellaneous</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">Backslash Escapes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">Automatic Links</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -163,9 +163,41 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h1><h2 id="PARAGRAPH"><a href="#PARAGRAPH" class="headerlink" title="PARAGRAPH"></a>PARAGRAPH</h2><p>A <strong>paragraph</strong> consists of one or more consecutive lines of text without a line break. In another word, multiple paragraphs are seperated by one or blank lines. Paragraphs should not be indented with spaces or tabs. To insert a <code>&lt;br /&gt;</code> break tag using Markdown, end a line with two or more spaces.</p>
-<h2 id="HEADERS"><a href="#HEADERS" class="headerlink" title="HEADERS"></a>HEADERS</h2><p>Markdown offers two styles of headers: <strong>Setext</strong> and <strong>atx</strong>.</p>
-<p>Setext-style headers consists of two levels, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>, which can be rendered by underlying the header text with equal sign (<code>=</code>) and hyphens (<code>-</code>), respectively. </p>
+    <p>This post offers an overview of Markdown syntax:</p>
+<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#block-elements">Block Elements</a><ul>
+<li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#code-blocks">Code Blocks</a></li>
+<li><a href="#horizontal-rules">Horizontal Rules</a></li>
+</ul>
+</li>
+<li><a href="#span-elements">Span Elements</a><ul>
+<li><a href="#links">Links</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#images">Images</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a><ul>
+<li><a href="#backslash-escapes">Backslash Escapes</a></li>
+<li><a href="#automatic-links">Automatic Links</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="block-elements">Block Elements</span></h2><h3><span id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</span></h3><p>A <strong>paragraph</strong> consists of one or more consecutive lines of text without a line break. In another word, multiple paragraphs are seperated by one or blank lines. Paragraphs should not be indented with spaces or tabs. To insert a <code>&lt;br /&gt;</code> break tag using Markdown, end a line with two or more spaces.</p>
+<h3><span id="headers">Headers</span></h3><p>Markdown offers two styles of headers: <strong>Setext</strong> and <strong>atx</strong>.</p>
+<p>Setext-style headers contain two levels, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>, which can be rendered by underlying the heading text with equal sign (<code>=</code>) and hyphens (<code>-</code>), respectively. </p>
 <pre><code>Level 1 Header
 ==============
 
@@ -185,7 +217,7 @@ Level 2 Header
 
 ###### This is an H6 header
 </code></pre>
-
+<h3><span id="blockquotes">Blockquotes</span></h3><h3><span id="lists">Lists</span></h3><h3><span id="code-blocks">Code Blocks</span></h3><h3><span id="horizontal-rules">Horizontal Rules</span></h3><h2><span id="span-elements">Span Elements</span></h2><h3><span id="links">Links</span></h3><h3><span id="emphasis">Emphasis</span></h3><h3><span id="code">Code</span></h3><h3><span id="images">Images</span></h3><h2><span id="miscellaneous">Miscellaneous</span></h2><h3><span id="backslash-escapes">Backslash Escapes</span></h3><h3><span id="automatic-links">Automatic Links</span></h3>
   </div>
 </article>
 
@@ -214,7 +246,7 @@ Level 2 Header
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basics"><span class="toc-number">1.</span> <span class="toc-text">Basics</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PARAGRAPH"><span class="toc-number">1.1.</span> <span class="toc-text">PARAGRAPH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HEADERS"><span class="toc-number">1.2.</span> <span class="toc-text">HEADERS</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Block Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">Paragraphs and Line Breaks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">Headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.4.</span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text">Code Blocks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.6.</span> <span class="toc-text">Horizontal Rules</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Span Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">Images</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">Miscellaneous</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">Backslash Escapes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">Automatic Links</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
