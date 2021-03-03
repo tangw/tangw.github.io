@@ -1487,57 +1487,73 @@ article .content .caption {
   content: ")";
 }
 .highlight {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #fff;
   color: #000;
+  background: #fff;
 }
 .highlight .code .comment,
-.highlight .code .quote,
-.highlight .code .variable {
-  color: #008000;
+.highlight .code .quote {
+  color: #006a00;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
-.highlight .code .built_in,
-.highlight .code .name,
-.highlight .code .tag {
-  color: #00f;
+.highlight .code .literal {
+  color: #aa0d91;
 }
-.highlight .code .string,
+.highlight .code .name {
+  color: #008;
+}
+.highlight .code .variable,
+.highlight .code .template-variable {
+  color: #660;
+}
+.highlight .code .string {
+  color: #c41a16;
+}
+.highlight .code .regexp,
+.highlight .code .link {
+  color: #080;
+}
 .highlight .code .title,
-.highlight .code .section,
-.highlight .code .attribute,
-.highlight .code .literal,
-.highlight .code .template-tag,
-.highlight .code .template-variable,
-.highlight .code .type,
-.highlight .code .addition {
-  color: #a31515;
-}
-.highlight .code .deletion,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo,
-.highlight .code .meta {
-  color: #2b91af;
-}
-.highlight .code .doctag {
-  color: #808080;
-}
-.highlight .code .attr {
-  color: #f00;
-}
+.highlight .code .tag,
 .highlight .code .symbol,
 .highlight .code .bullet,
-.highlight .code .link {
-  color: #00b0e8;
+.highlight .code .number,
+.highlight .code .meta {
+  color: #1c00cf;
+}
+.highlight .code .section,
+.highlight .code .class .title,
+.highlight .code .type,
+.highlight .code .attr,
+.highlight .code .built_in,
+.highlight .code .builtin-name,
+.highlight .code .params {
+  color: #5c2699;
+}
+.highlight .code .attribute,
+.highlight .code .subst {
+  color: #000;
+}
+.highlight .code .formula {
+  background-color: #eee;
+  font-style: italic;
+}
+.highlight .code .addition {
+  background-color: #baeeba;
+}
+.highlight .code .deletion {
+  background-color: #ffc8bd;
+}
+.highlight .code .selector-id,
+.highlight .code .selector-class {
+  color: #9b703f;
+}
+.highlight .code .doctag,
+.highlight .code .strong {
+  font-weight: bold;
 }
 .highlight .code .emphasis {
   font-style: italic;
-}
-.highlight .code .strong {
-  font-weight: bold;
 }
 pre {
   overflow-x: auto;

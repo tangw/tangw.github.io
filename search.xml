@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Getting started with Markdown</title>
+      <link href="2021/02/28/getting-started-with-markdown/"/>
+      <url>2021/02/28/getting-started-with-markdown/</url>
+      
+        <content type="html"><![CDATA[<p>This post walks through various elements in Markdown syntax:</p><div class="toc"><!-- toc --><ul><li><a href="#block-elements">Block Elements</a><ul><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#headers">Headers</a></li><li><a href="#blockquotes">Blockquotes</a></li><li><a href="#lists">Lists</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#horizontal-rules">Horizontal Rules</a></li></ul></li><li><a href="#span-elements">Span Elements</a><ul><li><a href="#links">Links</a></li><li><a href="#emphasis">Emphasis</a></li><li><a href="#code">Code</a></li><li><a href="#images">Images</a></li></ul></li><li><a href="#miscellaneous">Miscellaneous</a><ul><li><a href="#backslash-escapes">Backslash Escapes</a></li><li><a href="#automatic-links">Automatic Links</a></li></ul></li></ul><!-- tocstop --></div><h2><span id="block-elements">Block Elements</span></h2><h3><span id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</span></h3><p>A <strong>paragraph</strong> consists of one or more consecutive lines of text without a line break. In another word, multiple paragraphs are seperated by one or blank lines. Paragraphs should not be indented with spaces or tabs. To insert a line break tag <code>&lt;br&gt;</code>, end a line with two or more spaces (commonly referred to as ‘’trailing whitespaces’’) or with a <code>&lt;br&gt;</code> HTML tag directly, and then type return. The latter case is useful since it is hard to see the trailing whitespaces in an editor.</p><h3><span id="headers">Headers</span></h3><p>Markdown offers two styles of headers: <strong>Setext</strong> and <strong>atx</strong>.</p><p>Setext-style headers contain two levels, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>, which can be rendered by underlying the heading text with equal sign (<code>=</code>) and hyphens (<code>-</code>), respectively. </p><pre><code>Level 1 Header==============Level 2 Header--------------</code></pre><p>The atx-style headers, on the other hand, are rendered by adding number signs (<code>#</code>) in front of the header text. There are six levels, ranging from <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, in the atx-style headers.</p><pre><code># This is an H1 header## This is an H2 header### This is an H3 header#### This is an H4 header##### This is an H5 header###### This is an H6 header</code></pre><h3><span id="blockquotes">Blockquotes</span></h3><h3><span id="lists">Lists</span></h3><h3><span id="code-blocks">Code Blocks</span></h3><h3><span id="horizontal-rules">Horizontal Rules</span></h3><h2><span id="span-elements">Span Elements</span></h2><h3><span id="links">Links</span></h3><h3><span id="emphasis">Emphasis</span></h3><h3><span id="code">Code</span></h3><h3><span id="images">Images</span></h3><h2><span id="miscellaneous">Miscellaneous</span></h2><h3><span id="backslash-escapes">Backslash Escapes</span></h3><h3><span id="automatic-links">Automatic Links</span></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
