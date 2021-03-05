@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Acknowledgement: The following text heavily depends on the article posted in this link and is presented here for my self-study. This post walks through various elements in Markdown syntax:      Block">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting started with Blogging">
+<meta property="og:url" content="http://tangw.info/2021/03/05/getting-started-with-blogging/index.html">
+<meta property="og:site_name" content="scratchpad">
+<meta property="og:description" content="Acknowledgement: The following text heavily depends on the article posted in this link and is presented here for my self-study. This post walks through various elements in Markdown syntax:      Block">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-05T21:58:56.000Z">
+<meta property="article:modified_time" content="2021-03-05T23:58:00.716Z">
+<meta property="article:author" content="tangw">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          
+            <link rel="shortcut icon" href="https://www.gravatar.com/avatar/754002e850e1eebbd261bdec0aa06f3a?s=48">
+          
+        
+      
+      
+        
+          
+            <link rel="icon" type="image/png" href="https://www.gravatar.com/avatar/754002e850e1eebbd261bdec0aa06f3a?s=192" sizes="192x192">
+          
+        
+      
+      
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="https://www.gravatar.com/avatar/754002e850e1eebbd261bdec0aa06f3a?s=180">
+          
+        
+      
+    
+    <!-- title -->
+    <title>Getting started with Blogging</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://tangw.info/2021/03/05/getting-started-with-blogging/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&text=Getting started with Blogging"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&is_video=false&description=Getting started with Blogging"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Getting started with Blogging&body=Check out this article: http://tangw.info/2021/03/05/getting-started-with-blogging/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&name=Getting started with Blogging&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://tangw.info/2021/03/05/getting-started-with-blogging/&t=Getting started with Blogging"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Block Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">Paragraphs and Line Breaks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">Headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.4.</span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text">Code Blocks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.6.</span> <span class="toc-text">Horizontal Rules</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Span Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">Images</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">Miscellaneous</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">Backslash Escapes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">Automatic Links</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Getting started with Blogging
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">tangw</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-03-05T21:58:56.000Z" itemprop="datePublished">2021-03-05</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Blog/">Blog</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Markdown/" rel="tag">Markdown</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><em>Acknowledgement</em>: The following text heavily depends on the article posted in <a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/">this link</a> and is presented here for my self-study.</p>
+<p>This post walks through various elements in Markdown syntax:</p>
+<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#block-elements">Block Elements</a><ul>
+<li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#code-blocks">Code Blocks</a></li>
+<li><a href="#horizontal-rules">Horizontal Rules</a></li>
+</ul>
+</li>
+<li><a href="#span-elements">Span Elements</a><ul>
+<li><a href="#links">Links</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#images">Images</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a><ul>
+<li><a href="#backslash-escapes">Backslash Escapes</a></li>
+<li><a href="#automatic-links">Automatic Links</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="block-elements">Block Elements</span></h2><h3><span id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</span></h3><p>A <strong>paragraph</strong> consists of one or more consecutive lines of text without a line break. Multiple paragraphs are seperated by one or blank lines. Paragraphs should not be indented with spaces or tabs. A <strong>blank line</strong> is a line containing nothing or abitrary number of <strong>spaces</strong>/<strong>tabs</strong> only. To insert a line break tag <code>&lt;br&gt;</code>, end a line with two or more spaces (commonly referred to as ‘’trailing whitespaces’’) or with a <code>&lt;br&gt;</code> tag directly. </p>
+<h3><span id="headers">Headers</span></h3><p>Markdown offers two styles of headers: <strong>Setext</strong> and <strong>atx</strong>.</p>
+<p>Setext-style headers contain two levels, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>, which can be rendered by underlying the heading text with arbitary number of equal signs (<code>=</code>) and hyphens (<code>-</code>), respectively. For example,</p>
+<pre><code>Level 1 Header
+==============
+
+Level 2 Header
+--------------
+</code></pre>
+<p>The atx-style headers are rendered by adding hash signs (<code>#</code>) in front of the heading text. There are six levels in the atx-style headers ranging from <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>. For example,</p>
+<pre><code># This is an H1 header
+
+## This is an H2 header
+
+### This is an H3 header
+
+#### This is an H4 header
+
+##### This is an H5 header
+
+###### This is an H6 header
+</code></pre>
+<h3><span id="blockquotes">Blockquotes</span></h3><p>Markdown uses email-style <code>&gt;</code> characters for blockquoting, rendered as tag <code>&lt;blockquote&gt;</code>. It looks best if you hard wrap the text and put a <code>&gt;</code> in front of every line. For example,</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&gt; 
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&gt; id sem consectetuer libero luctus adipiscing.
+</code></pre>
+<p>Alternatively, it is also allowable to only put the <code>&gt;</code> before the first line of a hard-wrapped paragraph. For example,</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+</code></pre>
+<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by adding additional levels of <code>&gt;</code>. For example,</p>
+<pre><code>&gt; This is the first level of quoting.
+&gt;
+&gt; &gt; is nested blockquote.
+&gt;
+&gt; Back to the first level.
+</code></pre>
+<p>Blockquotes can contain other Markdown elements, including headers, lists and code bocks. For example,</p>
+<pre><code>&gt; ## This is a header.
+&gt; 
+&gt; 1.   This is the first list item.
+&gt; 2.   This is the second list item.
+&gt; 
+&gt; Here&#39;s some example code:
+&gt; 
+&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
+</code></pre>
+<h3><span id="lists">Lists</span></h3><p>Markdown supports unordered (bulleted) ordered (numbered) lists.</p>
+<p>Unordered lists, rendered as tag <code>&lt;ul&gt;</code>, use asterisks (<code>*</code>), pluses (<code>+</code>), and hyphens (<code>-</code>), interchangablly as list markers. For example,</p>
+<pre><code>* Red
+* Green
+* Blue
+</code></pre>
+<p>is equivalent to</p>
+<pre><code>+ Red
++ Green
++ Blue
+</code></pre>
+<p>and</p>
+<pre><code>- Red
+- Green
+- Blue
+</code></pre>
+<p>Ordered lists, rendered as tag <code>&lt;ol&gt;</code>, use numbers followed by a period. For example,</p>
+<pre><code>1. Bird
+2. McHale
+3. Parish
+</code></pre>
+<p>It is important to note that the actual numbers you use to mark the list have no effect on the HTML output that Markdown produces. For example, the list is written down in Markdown as below:</p>
+<pre><code>1. Bird
+3. McHale
+2. Parish
+</code></pre>
+<p>the rendered HTML output will be</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>Please note that Markdown starts ordered lists at an arbitrary number. With the lazy list numbering as shown above, one should still start the list with the number 1.</p>
+<p>List markers typically start at the left margin, but may be indented by up to three spaces. List markers must be followed by one or more spaces or tab.</p>
+<h3><span id="code-blocks">Code Blocks</span></h3><p>Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags.</p>
+<p>To produce a code block in Markdown, simply indent every line of the block by at least four spaces or one tab. For example, given the input below</p>
+<pre><code>This is a normal paragraph:
+
+    This is a code block.
+    
+</code></pre>
+<p>Markdown will produce</p>
+<pre><code>&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is a code block.&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p>One leve of indentation is removed from each line of a code block. For example,</p>
+<pre><code>Here is an example of AppleScript:
+
+    tell application &quot;Foo&quot;
+        beep
+    end tell
+</code></pre>
+<p>will turn into</p>
+<pre><code>&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p>Within a code block, ampersands (<code>&amp;</code>) and angle brackets (<code>&lt;</code> and <code>&gt;</code>) will be automatically converted into HTML entities.</p>
+<p>Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both <pre> and <code> tags.</code></pre></p>
+<h3><span id="horizontal-rules">Horizontal Rules</span></h3><p>A horizontal rule tag, <code>&lt;hr/&gt;</code>, is rendered by placing three or more hyphens (<code>-</code>), asterisks (<code>*</code>), or underscores (<code>_</code>) on a line by themselves. Spaces are allowed between the hyphens, asterisks, or underscores. For example, each of the following lines will produce a horizontal rule:</p>
+<pre><code>***
+* * *
+-----
+____
+</code></pre>
+<hr>
+<h2><span id="span-elements">Span Elements</span></h2><h3><span id="links">Links</span></h3><p>Markdown supports two style of links: inline and reference.</p>
+<p>In both styles, the link text is delimited by <code>[</code>square brackets<code>]</code>.</p>
+<p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example,</p>
+<pre><code>This is [an example](http://example.com/ &quot;title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+</code></pre>
+<p>will produce</p>
+<pre><code>&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;title&quot;&gt;
+an example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title
+attribute.&lt;/p&gt;
+</code></pre>
+<p>Relative paths can be used if a local resource is referred on the same server.</p>
+<pre><code>See my [About](/about/) page for details.
+</code></pre>
+<p>Reference-style links use a second set of square brackets, inside which you place a label of your choice to identify the link. For example,</p>
+<pre><code>This is [an example][id] reference-style link.
+</code></pre>
+<p>You can optionally use a space to separate the sets of brackets. For example,</p>
+<pre><code>This is [an example] [id] reference-style link.
+</code></pre>
+<p>Then, anywhere in the document, the corresponding link label can be given on a line as below</p>
+<pre><code>[id]: http://example.com/ &quot;optional title here&quot;
+</code></pre>
+<p>In summary,</p>
+<ul>
+<li>Square brackets containing the link identifier (optionally idented from the left margin using up to three spaces);</li>
+<li>followed by a colon;</li>
+<li>followed by one or more spaces (or tabs);</li>
+<li>followed by the URL for the link;</li>
+<li>optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.</li>
+</ul>
+<h3><span id="emphasis">Emphasis</span></h3><p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an <code>&lt;em&gt;</code> tag; double <code>*</code>‘s or <code>_</code>‘s will be wrapped with an <code>&lt;strong&gt;</code> tag. For example,</p>
+<pre><code>*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+</code></pre>
+<p>will be rendered as</p>
+<pre><code>&lt;em&gt;single asterisks&lt;/em&gt;
+
+&lt;em&gt;single asterisks&lt;/em&gt;
+
+&lt;strong&gt;double asterisks&lt;/strong&gt;
+
+&lt;strong&gt;double underscores&lt;/strong&gt;
+</code></pre>
+<p>Emphasis can be used in the middle of a word as below</p>
+<pre><code>abso\*frigging\*lutely
+</code></pre>
+<p>Asterisks or underscores surrounded with spaces will be treated literally. To produce a literal askterisk or underscore at any position, one can use backslash to escape it. Please see details below.</p>
+<h3><span id="code">Code</span></h3><p>To indicate a span of code, wrap it with backtick quotes (<code>`</code>). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example,</p>
+<pre><code>Use the `printf()` function.
+</code></pre>
+<p>will produce</p>
+<pre><code>&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+</code></pre>
+<p>To include a literal backtick character within a code span, one can use multiple backticks as the opening and closing delimiters. For example, the following</p>
+<pre><code>``There is a literal backtick (`) here.``
+</code></pre>
+<p>will be rendered as</p>
+<pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+</code></pre>
+<p>With a code span, ampersands and angle brackets are encoded as HTML entities automatically, which makes it easy to include example HTML tags. </p>
+<h3><span id="images">Images</span></h3><p>Markdown allows for two styles of image syntax: <em>inline</em> and <em>reference</em>.</p>
+<p>Inline image syntax looks like this:</p>
+<pre><code>![alt text](/path/to/img.jpg)
+
+![alt text)(/path/to/img.jpg &quot;optional title&quot;)
+</code></pre>
+<p>That is:</p>
+<ul>
+<li>An exclamation point: <code>!</code>;</li>
+<li>followed by a set of square brackets, containing the alt attribute text for the image;</li>
+<li>followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclposed in double or single quotes.</li>
+</ul>
+<p>Reference-style image syntax looks like this:</p>
+<pre><code>![alt text][id]
+</code></pre>
+<p>where ``id’’ is the name of a defined image reference. Image references are defined using syntax identical to link references:</p>
+<pre><code>[id]: url/to/image &quot;optional title attribute&quot;
+</code></pre>
+<hr>
+<h2><span id="miscellaneous">Miscellaneous</span></h2><h3><span id="backslash-escapes">Backslash Escapes</span></h3><p>Markdown uses backslash escapes to generate literal characters that would otherwise have special meaning in Markdown’s syntax. For example, a word surrounded with literal asterisks is <em>emphasized</em>, rendered with a <code>&lt;em&gt;</code> tag. If the literal asterisks are expected otherwise, a backslash shall be put before the asterisks. For example,</p>
+<pre><code>\*literal asterisks\*
+</code></pre>
+<p>Markdown provides backslash escapes for the following characters:</p>
+<pre><code>\   blakslash
+`   backtick
+*   asterisk
+_   underscore
+&#123;&#125;  curely braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation point
+</code></pre>
+<h3><span id="automatic-links">Automatic Links</span></h3><p>Markdown supports a shortcut style for creating ``automatic’’ links for URLs and email addresses: simply surround the URL or email address with a pair of angle brackets. Then the actual text of a URL or email address will become a clickable link. For example,</p>
+<pre><code>&lt;http://example.com/&gt;
+</code></pre>
+<p>will be rendered as</p>
+<pre><code>&lt;a&gt;href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
+</code></pre>
+<p>Automatic links for email addresses work similarly except that Markdown will also perform a bit of randomized encoding to help obscure the email address from addres-havasting spambots. For example, the following email address</p>
+<pre><code>&lt;address@example.com&gt;
+</code></pre>
+<p>will be rendered as something by Markdown below</p>
+<pre><code>&lt;a href=&quot;mailto:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#114;&amp;#x65;&amp;#x73;&amp;#x73;&amp;#x40;&amp;#101;&amp;#120;&amp;#x61;
+&amp;#109;&amp;#112;&amp;#x6c;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#114;&amp;#x65;&amp;#x73;
+&amp;#x73;&amp;#x40;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#112;&amp;#x6c;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;
+</code></pre>
+<p>Please note that the above entity-encoding trick will not prevent all address-harvesting bots.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Block Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">Paragraphs and Line Breaks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">Headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.4.</span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text">Code Blocks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.6.</span> <span class="toc-text">Horizontal Rules</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Span Elements</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">Images</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">Miscellaneous</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">Backslash Escapes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">Automatic Links</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://tangw.info/2021/03/05/getting-started-with-blogging/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&text=Getting started with Blogging"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&is_video=false&description=Getting started with Blogging"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Getting started with Blogging&body=Check out this article: http://tangw.info/2021/03/05/getting-started-with-blogging/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&title=Getting started with Blogging"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://tangw.info/2021/03/05/getting-started-with-blogging/&name=Getting started with Blogging&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://tangw.info/2021/03/05/getting-started-with-blogging/&t=Getting started with Blogging"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    tangw
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
